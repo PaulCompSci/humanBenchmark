@@ -14,10 +14,20 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.firstAndroidApp.ui.theme.HumanBenchmarkTheme
+import android.widget.GridLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.ComponentActivity
+import androidx.core.content.ContextCompat
+import kotlinx.coroutines.delay
+import java.util.Random
+
 
 class MainActivity : ComponentActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.layout1)
 
         val actButton = findViewById<Button>(R.id.button2)
@@ -29,4 +39,10 @@ class MainActivity : ComponentActivity() {
     }
     
 }
+
+
+
+    }
+}
+
 
