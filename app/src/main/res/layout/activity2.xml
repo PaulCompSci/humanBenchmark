@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity = "center"
+    tools:context=".MainActivity"
+    android:background="#9336B4">
+
+
+    <TextView
+        android:id= "@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level : 0"
+        android:textSize="150px"
+        android:layout_marginBottom="60dp"/>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:columnCount="3"
+        android:columnOrderPreserved="false"
+        android:orientation="horizontal"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        tools:visibility="visible">
+
+        <Button
+            android:id = "@+id/button0"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"
+           />
+        <Button
+            android:id = "@+id/button1"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button2"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button3"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button5"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button6"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button7"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/button8"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="fill"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id = "@+id/testing"
+            android:background="#40128B"
+            android:layout_margin="10dp"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
