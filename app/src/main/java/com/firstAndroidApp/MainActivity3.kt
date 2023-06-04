@@ -11,6 +11,8 @@ class MainActivity3 : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout3)
 
+
+
         val actButton = findViewById<Button>(R.id.button3)
         actButton.setOnClickListener{
             val Intent = Intent(this,MainActivity::class.java)
