@@ -1,8 +1,11 @@
 package com.firstAndroidApp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -15,30 +18,15 @@ import com.firstAndroidApp.ui.theme.HumanBenchmarkTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            HumanBenchmarkTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
-            }
+        setContentView(R.layout.layout1)
+
+        val actButton = findViewById<Button>(R.id.button2)
+        actButton.setOnClickListener{
+            val Intent = Intent(this,MainActivity2::class.java)
+            startActivity(Intent)
+            finish()
         }
     }
     
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    HumanBenchmarkTheme {
-        Greeting("Android")
-    }
-}
