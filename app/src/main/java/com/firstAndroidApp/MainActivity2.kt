@@ -7,7 +7,7 @@ import androidx.activity.ComponentActivity
 import androidx.core.content.ContextCompat
 import java.util.Random
 
-class MainActivity : ComponentActivity() {
+class MainActivity2: ComponentActivity() {
     var level = 0
     var arr = mutableListOf<Int>()
     var pointer = 0
